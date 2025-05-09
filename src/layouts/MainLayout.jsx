@@ -1,17 +1,18 @@
 import React from "react";
 import Navlink from "../components/Navlink";
+import { Link } from "react-router";
 
 
 export default function MainLayout({children}) {
     return (
         <>
          <nav className="flex py-4 px-16 justify-between opacity-100 z-10">
-           <h1 className="title">syahdanisme</h1>
+           <Link className="title" to="/" >syahdanisme</Link>
            <div className="flex gap-10">
-            <Navlink href="/">Home</Navlink>
-            <Navlink href="/aboutme">About</Navlink>
-            <Navlink href="/projects">Projects</Navlink>
-            <Navlink href="/certificate">Certificates</Navlink>
+            <Navlink to="/">Home</Navlink>
+            <Navlink to="/aboutme">About</Navlink>
+            <Navlink to="/projects">Projects</Navlink>
+            <Navlink to="/certificates">Certificates</Navlink>
            </div>
          </nav>
          {children}
@@ -26,7 +27,6 @@ export default function MainLayout({children}) {
             </span>
           </div>
          </footer>
-         {/* <img rel="icon" src="../../public/react.svg" width={"5px"} height={"5px"} /> */}
         </>
     )
 }
