@@ -1,7 +1,14 @@
 import React from "react";
+import { Link } from "react-router";
 
-export default function Navlink({children, href}) {
+export default function Navlink({to, children}) {
     return (
-        <link rel="icon" href={href} className={`text-lg font-semibold text-black hover:text-shadow-teal-50`} style={{ textDecoration: "none" }} >{children}</link>
+        <Link
+          className="text-xl font-semibold"
+          style={{ textDecoration: "none" }}
+          to={to}
+        >
+            {children}
+        </Link>
     )
 }
