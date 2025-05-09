@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@font-face {
+  font-family: 'tage';
+  src: url("./assets/Tagesschrift-Regular.ttf");
+}
+
+.title {
+  font-family: tage;
+  @apply text-3xl font-medium text-shadow-gray-700;
+}
