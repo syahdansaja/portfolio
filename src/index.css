@@ -10,3 +10,7 @@
   font-family: bubblegum;
   @apply text-3xl font-medium text-shadow-md;
 }
+
+.bubble-gum {
+  font-family: bubblegum;
+}

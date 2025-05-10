@@ -6,9 +6,6 @@ export default {
         "./index.html"
     ],
     theme: {
-        color: {
-            
-        }
     },
     extend: {
     }
