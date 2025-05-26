@@ -12,7 +12,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className="w-[50%] h-full justify-items-center align-middle">
-                                    </div>
+                </div>
             </section>
             <section>
 
