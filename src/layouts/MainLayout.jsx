@@ -17,16 +17,19 @@ export default function MainLayout({children}) {
            </div>
          </nav>
          {children}
-         <footer className="px-16 py-16 h-64 w-full bottom-0 bg-gray-700">
-          <div className="flex justify-between w-full">
-            <span className="text-sm font-extralight text-white">copyright © 2025 , Syahdan</span>
-            <span className="text-sm font-extralight text-white flex gap-2" style={{alignItems:"center"}}>
-              <span>Powered by React</span>
-              <img rel="icon" src={ReactIcon} width={"20px"} height={"20px"} />
-              <span>, Tailwindcss</span>
-              <img rel="icon" src={tailwindCssIcon} width={"20px"} height={"20px"} />
-            </span>
-          </div>
+         <footer className="px-8 py-0 h-64 w-full bg-gray-700">
+             <div className="min-h-[90%] min-w-[100%]"></div>
+             <div className="flex justify-between">
+                 <span>
+                     <span className="text-sm text-white text-shadow-gray-950 text-shadow-2xs">Created by Syahdan</span>
+                 </span>
+                 <span className="flex">
+                     <span className="text-sm text-white text-shadow-gray-950 text-shadow-2xs">Build with React   </span>
+                     <img className="max-w-[20px] min-w-[20px] ml-2" style={{ }} src={ReactIcon} />
+                     <span className="text-sm text-white text-shadow-gray-950 text-shadow-2xs ml-2">and TailwindCSS</span>
+                     <img className="max-w-[20px] min-w-[20px] ml-2" style={{ }} src={tailwindCssIcon} />
+                 </span>
+             </div>
          </footer>
         </>
     )

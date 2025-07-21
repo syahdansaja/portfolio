@@ -14,3 +14,22 @@
 .bubble-gum {
   font-family: bubblegum;
 }
+
+.cursor-custom-1 {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.decoration-nav {
+  text-decoration: none;
+}
+
+.decoration-nav:hover {
+  text-decoration: underline;
+}
